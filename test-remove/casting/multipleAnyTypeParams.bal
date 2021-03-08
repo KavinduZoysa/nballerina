@@ -1,4 +1,4 @@
-// RUN: JAVA_HOME=%java_path %testRunScript %s %nballerinacc | filecheck %s
+// RUN: "%testRunScript" %s %nballerinacc | filecheck %s
 
 int _bal_result = 0;
 public function bar(any l, int m, any n) returns int

@@ -9,9 +9,9 @@ config.test_source_root = os.path.dirname(__file__)
 config.test_exec_root = os.path.join(config.my_obj_root, 'test')
 
 config.substitutions.append(('%nballerinacc',
-    os.path.join(config.my_obj_root, 'nballerinacc')))
+    os.path.join(os.path.join(config.my_obj_root, 'Release'), 'nballerinacc')))
 
 config.substitutions.append(('%java_path',config.java_path))
 
 config.substitutions.append(('%testRunScript',
-    os.path.join(config.test_source_root, 'testRunScript.sh')))
+    os.path.join(config.test_source_root, 'testRunScript.bat')))

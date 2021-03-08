@@ -1,4 +1,5 @@
 set(java_path "$ENV{JAVA_HOME}")
+message(STATUS "xxxxxxxxxxx $ENV{JAVA_HOME}")
 configure_file(lit.site.cfg.py.in lit.site.cfg.py @ONLY)
 
 add_custom_target(check

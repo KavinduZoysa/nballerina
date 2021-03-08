@@ -1,4 +1,4 @@
-// RUN: JAVA_HOME=%java_path %testRunScript %s %nballerinacc | filecheck %s
+// RUN: "%testRunScript" %s %nballerinacc | filecheck %s
 
 boolean _bal_result = false;
 public function bar(any z) returns boolean
