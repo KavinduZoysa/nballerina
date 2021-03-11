@@ -1,0 +1,16 @@
+name: C/C++ CI
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 */12 * * *'
+
+jobs:
+  build:
+    runs-on: windows-2019 
+    steps:
+      - name: Install utils
+        run: | 
+          wget https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe
+          rustup-init.exe
+          cargo install cbindgen
